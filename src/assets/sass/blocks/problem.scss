@@ -1,0 +1,141 @@
+.problem {
+    margin-bottom: 90px;
+}
+
+.proble__img {
+    margin-top: 8px;
+    margin-left: 68px;
+    margin-right: 99px;
+    width: 250px;
+    height: 572px;
+    position: relative;
+    img {
+        width: 250px;
+        height: 564px;
+    }
+    &::before {
+        content: url("../../assets/img/problem-line.svg");
+        position: absolute;
+        top: 7px;
+        right: -85px;
+    }
+}
+
+.proble__img-link {
+    position: absolute;
+    top: 70px;
+    left: 116px;
+    img {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+.marker-2 {
+    top: 144px;
+}
+
+.marker-3 {
+    top: 247px;
+    left: 116px;
+}
+
+.marker-4 {
+    top: auto;
+    bottom: 156px;
+    left: 154px;
+}
+
+.marker-5 {
+    top: auto;
+    bottom: 13px;
+    left: 162px;
+}
+
+.problem__wrapp {
+    display: flex;
+    justify-content: start;
+}
+
+.problem__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 21px;
+}
+.problem__row-problems {
+    padding-right: 30px;
+}
+.problem__list {
+    max-width: 385px;
+    padding-left: 29px;
+}
+.problem-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    color: #fc3f1d;
+
+    text-transform: uppercase;
+
+    padding-bottom: 20px;
+}
+
+.problem__row-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #3a81cf;
+    padding-bottom: 10px;
+}
+
+.problem__list-inner {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #323232;
+
+    padding-bottom: 10px;
+    list-style: disc;
+}
+
+.problem-solution {
+    background: #ffffff;
+    box-shadow: 0px 0px 11px #efeeea;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.problem-solution-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #3a81cf;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.problem-solution-content {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+
+.problem-solution-btn {
+    display: inline-block;
+    background: #3a81cf;
+    border-radius: 45px;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+    padding: 12px 30px;
+    transition: 0.4s;
+
+    &:hover {
+        background: #428cdb;
+    }
+}

@@ -1,0 +1,43 @@
+.main {
+    position: relative;
+    padding: 162px 0 247px;
+    background: url("../../assets/img/main.jpg") no-repeat center center;
+    margin-bottom: 90px;
+}
+
+.main__wrapp-title {
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+
+    color: #323232;
+
+    padding: 30px 0 32px;
+}
+
+.main__wrapp {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 0.01%,
+        #ffffff 53.54%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+.main__btn {
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    border-radius: 45px;
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
