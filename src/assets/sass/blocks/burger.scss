@@ -1,0 +1,34 @@
+.menu__burger {
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    position: relative;
+    z-index: 3;
+
+    .menu__burger-img--active {
+        display: none;
+    }
+}
+
+.burger__active {
+    .menu__burger-img {
+        display: none;
+    }
+    .menu__burger-img--active {
+        display: block;
+    }
+
+    position: relative;
+    z-index: 3;
+}
+
+.burger {
+    display: none;
+}
+
+.burger-link-stop {
+    display: none;
+}
