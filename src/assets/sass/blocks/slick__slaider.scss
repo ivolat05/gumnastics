@@ -1,0 +1,19 @@
+.slick-btn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    position: absolute;
+    top: 51%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.price {
+    .slick-next {
+        right: -86px;
+    }
+    .slick-prev {
+        left: -52px;
+    }
+}

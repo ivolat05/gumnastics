@@ -1,2 +1,80 @@
 //= components/slick.min.js
 //= components/jquery.mCustomScrollbar.js
+
+//price tabs
+
+const priceBtn = document.querySelectorAll('.price-btn');
+const tabItem = document.querySelectorAll('.price__box-slaider');
+priceBtn.forEach((item) => {
+    item.addEventListener('click', function () {
+        let activeBtn = item;
+        let activeId = activeBtn.getAttribute('data-price');
+        let activeTab = document.querySelector(activeId);
+
+
+        if (!activeBtn.classList.contains('btn-active')) {
+            priceBtn.forEach(function (item) {
+                item.classList.remove('btn-active');
+            });
+            tabItem.forEach(function (item) {
+                item.classList.remove('price__slaider-acive');
+            });
+
+            activeBtn.classList.add('btn-active');
+            activeTab.classList.add('price__slaider-acive');
+        }
+    });
+
+});
+
+// price slaider
+
+$('.price__slaider').not('.slick-initialized').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: '<button class="slick-btn slick-prev"><img src="./assets/img/arrow-left.svg" alt="prev"></button>',
+    nextArrow: '<button class="slick-btn slick-next"><img src="./assets/img/arrow-right.svg" alt="next"></button>',
+    arrows: true,
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+        }
+    },
+    {
+        breakpoint: 780,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+    }
+    ]
+});
+
+document.querySelector('.test').addEventListener('click', function () {
+    $('.price__slaider-2').not('.slick-initialized').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '<button class="slick-btn slick-prev"><img src="./assets/img/arrow-left.svg" alt="prev"></button>',
+        nextArrow: '<button class="slick-btn slick-next"><img src="./assets/img/arrow-right.svg" alt="next"></button>',
+        arrows: true,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 780,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+        ]
+    });
+})
