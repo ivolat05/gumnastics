@@ -1,3 +1,31 @@
+.reviews__wrapp-title {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.reviews-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.reviews-link {
+    position: absolute;
+    top: 16px;
+    right: 0;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #3a81cf;
+    transition: 0.4s;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .slick-btn {
     cursor: pointer;
     border: none;
@@ -26,5 +54,45 @@
     .slick-prev {
         top: 36%;
         left: -62px;
+    }
+}
+
+.question__slaider {
+    .slick-next {
+        top: 51%;
+        right: -77px;
+    }
+    .slick-prev {
+        top: 51%;
+        left: -62px;
+    }
+}
+
+.reviews__slaider {
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 62px;
+    }
+    .slick-dots li button {
+        text-indent: -9999px;
+        width: 8px;
+        height: 8px;
+
+        border-radius: 8px;
+        padding: 0;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin: 0 2px;
+        background: #ffffff;
+        border: 0.5px solid #3a81cf;
+        box-sizing: border-box;
+    }
+    .slick-dots .slick-active {
+        button {
+            background: #3a81cf;
+        }
     }
 }

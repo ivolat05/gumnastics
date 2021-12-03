@@ -105,3 +105,25 @@ $('.price__slaider').not('.slick-initialized').slick({
     }
     ]
 });
+
+// slaider question
+
+$('.question__slaider').not('.slick-initialized').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: '<button class="slick-btn slick-prev"><img src="./assets/img/arrow-left.svg" alt="prev"></button>',
+    nextArrow: '<button class="slick-btn slick-next"><img src="./assets/img/arrow-right.svg" alt="next"></button>',
+    arrows: true
+});
+
+// slaider reviews
+$('.reviews__slaider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: '<button class="slick-btn slick-prev"><img src="./assets/img/arrow-left.svg" alt="prev"></button>',
+    nextArrow: '<button class="slick-btn slick-next"><img src="./assets/img/arrow-right.svg" alt="next"></button>',
+    arrows: false,
+    dots: true
+});
