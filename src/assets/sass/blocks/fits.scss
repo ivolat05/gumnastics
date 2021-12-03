@@ -1,0 +1,108 @@
+.fits {
+    margin-bottom: 90px;
+    .container {
+        position: relative;
+    }
+}
+
+.fon {
+    width: 80vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(96.38deg, #ebf2fa 0%, rgba(235, 242, 250, 0) 100%) no-repeat center left;
+    border-radius: 20px 0px 0px 20px;
+    z-index: -1;
+}
+.fits__wrapp {
+    max-width: 1258px;
+    padding: 90px 0 90px 90px;
+}
+
+.fits__wrapp-inner {
+    max-width: 462px;
+}
+
+.fits__img-box {
+    width: 640px;
+    padding-top: 68px;
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fits__img:nth-child(1) {
+    margin-right: 31px;
+    position: relative;
+    top: 59px;
+}
+
+.fits__img:nth-last-child(1) {
+    position: absolute;
+    bottom: -245px;
+    left: 123px;
+}
+
+.fits-title {
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    padding-bottom: 40px;
+}
+
+.fits__list {
+    padding-bottom: 13px;
+}
+
+.fits__list-inner {
+    padding-left: 38px;
+    padding-bottom: 30px;
+
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+
+    position: relative;
+
+    &::before {
+        content: url("../../assets/img/fits-icon.svg");
+        position: absolute;
+        left: 0;
+        top: 2px;
+    }
+}
+
+.fits__content {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #3a81cf;
+
+    padding-bottom: 32px;
+}
+
+.fits-btn {
+    display: inline-block;
+    padding: 12px 30px;
+
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+
+    background: #3a81cf;
+    border-radius: 45px;
+    &:hover {
+        background: #3f90e6;
+    }
+}
+
+.fits__wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
