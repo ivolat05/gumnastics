@@ -11,9 +11,20 @@
 
 .price {
     .slick-next {
-        right: -86px;
+        right: -75px;
     }
     .slick-prev {
-        left: -52px;
+        left: -62px;
+    }
+}
+
+.trainer {
+    .slick-next {
+        top: 36%;
+        right: -100px;
+    }
+    .slick-prev {
+        top: 36%;
+        left: -62px;
     }
 }
