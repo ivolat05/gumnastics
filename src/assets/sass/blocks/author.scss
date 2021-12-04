@@ -1,0 +1,64 @@
+.author {
+    margin-bottom: 90px;
+}
+.author-img {
+    width: 490px;
+    height: 490px;
+    border-radius: 594px;
+}
+
+.author-title {
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    padding-bottom: 30px;
+}
+
+.author-text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 33px;
+}
+
+.author__box-title {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 3px;
+}
+
+.author__box-text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.author__box-experience,
+.author__box-education {
+    padding-left: 35px;
+    position: relative;
+    &::before {
+        content: url("../../assets/img/experience.svg");
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.author__box-education::before {
+    content: url("../../assets/img/education.svg");
+}
+
+.author__box-experience {
+    margin-bottom: 32px;
+}
+
+.author__wrapp {
+    display: flex;
+    justify-content: space-between;
+}
+.author__info {
+    width: 58%;
+}

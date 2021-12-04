@@ -1,0 +1,26 @@
+.breadcrumb {
+    padding: 24px 0 30px;
+}
+ul.breadcrumb__list li {
+    display: inline;
+    font-family: "Gilroy";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+ul.breadcrumb__list li + li:before {
+    content: "/\00a0";
+}
+
+ul.breadcrumb__list li a {
+    font-family: "Gilroy";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration-line: underline;
+}
+
+ul.breadcrumb__list li a:hover {
+    color: #3a81cf;
+}

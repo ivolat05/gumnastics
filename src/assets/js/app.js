@@ -1,6 +1,15 @@
 //= components/slick.min.js
 //= components/jquery.mCustomScrollbar.js
 
+// slaider main__box
+$('.main__box-slaider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true
+});
+
 //price tabs
 
 const priceBtn = document.querySelectorAll('.price-btn');
@@ -122,8 +131,7 @@ $('.reviews__slaider').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    prevArrow: '<button class="slick-btn slick-prev"><img src="./assets/img/arrow-left.svg" alt="prev"></button>',
-    nextArrow: '<button class="slick-btn slick-next"><img src="./assets/img/arrow-right.svg" alt="next"></button>',
     arrows: false,
     dots: true
 });
+

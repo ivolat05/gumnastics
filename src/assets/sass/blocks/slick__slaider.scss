@@ -96,3 +96,37 @@
         }
     }
 }
+
+.main__box-slaider {
+    .slick-dots {
+        position: absolute;
+        bottom: 18px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 62px;
+    }
+    .slick-dots li button {
+        text-indent: -9999px;
+        width: 8px;
+        height: 8px;
+
+        border-radius: 8px;
+        padding: 0;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin: 0 2px;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 8px;
+        border: none;
+        box-sizing: border-box;
+    }
+    .slick-dots .slick-active {
+        button {
+            background: #ffffff;
+        }
+    }
+}
