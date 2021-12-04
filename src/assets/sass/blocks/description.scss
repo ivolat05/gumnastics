@@ -1,0 +1,62 @@
+.description {
+    margin-bottom: 90px;
+}
+.description-img {
+    width: 490px;
+    height: 490px;
+    border-radius: 594px;
+}
+
+.description-title {
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    padding-bottom: 30px;
+}
+
+.description__box-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 5px;
+}
+
+.description__box-text,
+.description-text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+
+.description-span {
+    display: block;
+    padding-top: 8px;
+}
+
+.description__box-month,
+.description__box-day {
+    padding-left: 35px;
+    position: relative;
+    &::before {
+        content: url("../../assets/img/description-icon.svg");
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.description__box-day::before {
+    content: url("../../assets/img/description-icon-2.svg");
+}
+
+.description__wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.description-info {
+    width: 57%;
+}

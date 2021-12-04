@@ -20,7 +20,7 @@ title: Главная
 {{>footer}}
 
 
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;" type="text/javascript"></script>
 <script>
     // map yandex
     ymaps.ready(init);
@@ -46,19 +46,19 @@ title: Главная
         ),
 
             myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                hintContent: 'Собственный значок метки',
-                balloonContent: 'Это красивая метка'
+                hintContent: 'swimming.by',
+                balloonContent: 'swimming.by'
             }, {
                 // Опции.
                 // Необходимо указать данный тип макета.
                 iconLayout: 'default#image',
                 // Своё изображение иконки метки.
-                iconImageHref: 'img/metka.png',
+                iconImageHref: './assets/img/map.svg',
                 // Размеры метки.
-                iconImageSize: [30, 42],
+                iconImageSize: [40, 40],
                 // Смещение левого верхнего угла иконки относительно
                 // её "ножки" (точки привязки).
-                iconImageOffset: [-5, -38]
+                iconImageOffset: [-20, -120]
             }),
 
             myPlacemarkWithContent = new ymaps.Placemark([53.936290, 27.583130], {

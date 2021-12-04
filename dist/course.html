@@ -129,7 +129,7 @@
                 </div>
             </div>
         </div>
-    </header><section class="breadcrumb">
+    </header><div class="breadcrumb">
         <div class="container">
             <ul class="breadcrumb__list">
                 <li><a href="#">Главная </a></li>
@@ -137,7 +137,7 @@
                 <li>Курс “Жизнь без боли”</li>
             </ul>
         </div>
-    </section><main class="main__box">
+    </div><main class="main__box">
         <div class="container">
             <h1 class="main__box-title">
                 Авторский курс «Жизнь без боли»
@@ -305,7 +305,42 @@
             </div>
         </div>
     
-    </section>
+    </section><div class="description">
+        <div class="container">
+            <div class="description__wrapp">
+                <img class="description-img" src="./assets/img/description.jpg" alt="">
+                <div class="description-info">
+                    <div class="description-title">
+                        О курсе
+                    </div>
+                    <div class="description__box-month">
+                        <div class="description__box-title">
+                            Длительность курса:
+                        </div>
+                        <div class="description__box-text">
+                            3 месяца 2 раза в неделю
+                        </div>
+                    </div>
+                    <div class="description__box-day">
+                        <div class="description__box-title">
+                            Длительность занятия 1 час:
+                        </div>
+                        <div class="description__box-text">
+                            40 мин практики + 20 мин теории
+                        </div>
+                    </div>
+                    <div class="description-text">
+                        Вы получаете памятку с авторскими рекомендациями тренера для самостоятельных занятий вне курса<br>
+                        <span class="description-span">(сама программа 10-12 упражнений)</span>
+                    </div>
+                    <div class="description-text">
+                        На протяжении всего курса вы получаете рекомендации по улучшению своего здоровья
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="contact">
         <div class="container">
             <div class="contact__wrapp">
@@ -370,7 +405,7 @@
         </div>
     </footer>
     
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;" type="text/javascript"></script>
     <script>
         // map yandex
         ymaps.ready(init);
@@ -396,19 +431,20 @@
             ),
     
                 myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                    hintContent: 'Собственный значок метки',
-                    balloonContent: 'Это красивая метка'
+                    hintContent: 'swimming.by',
+                    balloonContent: 'swimming.by'
+    
                 }, {
                     // Опции.
                     // Необходимо указать данный тип макета.
                     iconLayout: 'default#image',
                     // Своё изображение иконки метки.
-                    iconImageHref: 'img/metka.png',
+                    iconImageHref: './assets/img/map.svg',
                     // Размеры метки.
-                    iconImageSize: [30, 42],
+                    iconImageSize: [30, 30],
                     // Смещение левого верхнего угла иконки относительно
                     // её "ножки" (точки привязки).
-                    iconImageOffset: [-5, -38]
+                    iconImageOffset: [-20, -130]
                 }),
     
                 myPlacemarkWithContent = new ymaps.Placemark([53.936290, 27.583130], {
