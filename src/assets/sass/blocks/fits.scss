@@ -17,7 +17,11 @@
 }
 .fits__wrapp {
     max-width: 1258px;
-    padding: 90px 0 90px 90px;
+    padding: 0 0 90px 90px;
+}
+
+.fits__head {
+    padding: 90px 30px 40px 90px;
 }
 
 .fits__wrapp-inner {
@@ -26,7 +30,6 @@
 
 .fits__img-box {
     width: 640px;
-    padding-top: 68px;
 
     position: relative;
     display: flex;
@@ -39,12 +42,17 @@
 .fits__img:nth-child(1) {
     margin-right: 31px;
     position: relative;
-    top: 59px;
+    top: 53px;
+}
+
+.fits__img:nth-child(2) {
+    position: relative;
+    top: -8px;
 }
 
 .fits__img:nth-last-child(1) {
     position: absolute;
-    bottom: -245px;
+    bottom: -237px;
     left: 123px;
 }
 
@@ -53,7 +61,6 @@
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
-    padding-bottom: 40px;
 }
 
 .fits__list {

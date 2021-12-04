@@ -1,0 +1,28 @@
+.fits-results {
+    margin-bottom: 97px;
+    .fits__wrapp {
+        padding-bottom: 49px;
+    }
+    .fits__head {
+        padding-bottom: 30px;
+    }
+
+    .fits__img:nth-child(1) {
+        top: 62px;
+    }
+
+    .fits__img:nth-child(2) {
+        top: 2px;
+    }
+
+    .fits__img:nth-last-child(1) {
+        bottom: -246px;
+    }
+}
+
+.fits-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    padding-top: 19px;
+}
