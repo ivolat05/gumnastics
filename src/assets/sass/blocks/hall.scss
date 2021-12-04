@@ -1,0 +1,69 @@
+.hall {
+    margin-bottom: 90px;
+    .container {
+        position: relative;
+    }
+}
+
+.hall-inner {
+    padding: 90px 0 1px 90px;
+}
+
+.hall-title {
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    padding-bottom: 23px;
+}
+
+.hall-text,
+.hall__list-inner {
+    font-family: "Gilroy";
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+}
+.hall-text {
+    padding-bottom: 12px;
+}
+
+.hall-text-fix {
+    padding-bottom: 34px;
+}
+
+.hall__list-inner {
+    padding-bottom: 35px;
+    padding-left: 35px;
+    position: relative;
+    &::before {
+        content: url("../../assets/img/hall-icon.svg");
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.hall__wrapp {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.hall__wrapp:nth-child(2n + 1) {
+    flex-direction: row-reverse;
+    justify-content: start;
+    .hall__list {
+        margin-left: 30px;
+    }
+}
+
+.hall__list {
+    width: 57%;
+}
+
+.hall-img {
+    width: 386px;
+    height: 274px;
+    border-radius: 20px;
+}
