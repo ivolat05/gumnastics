@@ -1,0 +1,135 @@
+.contact {
+    margin-bottom: 90px;
+}
+
+.contact__info {
+    width: 386px;
+    background: #ffffff;
+    box-shadow: 0px 0px 11px #efeeea;
+    border-radius: 20px;
+
+    margin-top: 7px;
+    padding: 30px;
+    .logo {
+        margin-bottom: 20px;
+        display: block;
+    }
+}
+
+.contact-adress,
+.contact-tel,
+.contact-mail {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 10px;
+    display: block;
+    position: relative;
+    padding-left: 33px;
+    transition: 0.3s;
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-40%);
+    }
+}
+
+.contact-tel:hover,
+.contact-mail:hover {
+    color: #3a81cf;
+    text-decoration: underline;
+}
+
+.contact-adress::before {
+    content: url("../../assets/img/map-pin.svg");
+}
+.contact-tel::before {
+    content: url("../../assets/img/contact-phone.svg");
+}
+.contact-mail::before {
+    content: url("../../assets/img/send.svg");
+}
+
+.contact__info-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact__link-box {
+    padding-bottom: 5px;
+}
+
+.contact__link-box:nth-last-child(1) {
+    padding-bottom: 0;
+}
+
+.contact__link {
+    margin-right: 7px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contct__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 19px;
+}
+
+.contact-input,
+.contact-textarea {
+    outline: none;
+    background: #ffffff;
+    border: 1px solid #efeeea;
+    border-radius: 10px;
+    padding: 14px 20px;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #444444;
+    margin-bottom: 10px;
+}
+
+.contact-textarea {
+    resize: none;
+    height: 166px;
+}
+
+.contact-btn {
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+
+    color: #ffffff;
+    padding: 12px 30px;
+    background: #3a81cf;
+    border-radius: 45px;
+    width: 170px;
+    margin: 12px 0 0 auto;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        background: #428fe2;
+    }
+}
+
+.contact__wrapp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__form {
+    width: 66%;
+    padding-top: 5px;
+}
