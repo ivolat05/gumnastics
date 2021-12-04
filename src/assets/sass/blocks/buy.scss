@@ -1,0 +1,142 @@
+.buy {
+    margin-bottom: 83px;
+}
+
+.buy-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+
+    padding-bottom: 40px;
+}
+
+.buy__box {
+    max-width: 594px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0px 0px 11px #efeeea;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buy--discount {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #ffffff;
+    padding: 5px 10px;
+    background: #fc3f1d;
+    border-radius: 30px;
+    position: absolute;
+    left: 21px;
+    top: 22px;
+}
+
+.buy-type {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #3a81cf;
+    padding-bottom: 9px;
+}
+
+.buy-name {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #3a81cf;
+    text-transform: uppercase;
+    padding-bottom: 41px;
+}
+
+.buy__box-wrapp {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding-bottom: 46px;
+    padding-left: 25px;
+}
+
+.buy__price-old {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+
+    color: #b7b6b6;
+    position: relative;
+    margin-right: 16px;
+    top: -3px;
+    span {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+
+        color: #b7b6b6;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 135px;
+        height: 1px;
+        background: #b7b6b6;
+        left: -11px;
+        top: 55%;
+    }
+}
+
+.buy__price {
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 91px;
+    color: #fc3f1d;
+    span {
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 38px;
+        color: #fc3f1d;
+        position: relative;
+        left: -13px;
+    }
+}
+
+.buy-stock {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #323232;
+    padding-bottom: 43px;
+}
+
+.buy-btn {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #ffffff;
+    background: #3a81cf;
+    border-radius: 45px;
+    transition: 0.3s;
+    padding: 12px 30px;
+    &:hover {
+        background: #3e91e9;
+    }
+}
