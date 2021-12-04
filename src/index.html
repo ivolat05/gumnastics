@@ -22,10 +22,9 @@ title: Главная
 
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
 <script>
+    // map yandex
     ymaps.ready(init);
     function init() {
-
-
         var myMap = new ymaps.Map("map", {
             center: [53.9354950, 27.582980],
             controls: [],
@@ -39,13 +38,7 @@ title: Главная
             }
         );
 
-
-
-
-
         myMap.behaviors.disable('scrollZoom');
-
-
 
         // Создаём макет содержимого.
         MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
@@ -92,7 +85,5 @@ title: Главная
             .add(myPlacemark)
             .add(myPlacemarkWithContent);
 
-
     }
-
 </script>

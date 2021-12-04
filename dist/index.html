@@ -1246,10 +1246,9 @@
     
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
     <script>
+        // map yandex
         ymaps.ready(init);
         function init() {
-    
-    
             var myMap = new ymaps.Map("map", {
                 center: [53.9354950, 27.582980],
                 controls: [],
@@ -1263,13 +1262,7 @@
                 }
             );
     
-    
-    
-    
-    
             myMap.behaviors.disable('scrollZoom');
-    
-    
     
             // Создаём макет содержимого.
             MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
@@ -1316,9 +1309,7 @@
                 .add(myPlacemark)
                 .add(myPlacemarkWithContent);
     
-    
         }
-    
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/app.min.js"></script>
