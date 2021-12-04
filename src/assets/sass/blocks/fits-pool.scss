@@ -1,0 +1,47 @@
+.fits-pool {
+    .fits-text {
+        font-family: "Gilroy";
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+        padding-top: 22px;
+    }
+    .container {
+        position: relative;
+    }
+    .fits__head {
+        padding-bottom: 0;
+    }
+    .fits__wrapp-text {
+        font-family: "Gilroy";
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+        padding-top: 22px;
+        padding-bottom: 31px;
+    }
+
+    .fits__wrapp {
+        margin-top: -10px;
+        padding-bottom: 61px;
+    }
+
+    .fits__list-inner {
+        font-family: "Gilroy";
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+        padding-bottom: 35px;
+    }
+    .fits__list-inner:nth-last-child(1) {
+        padding-bottom: 0;
+    }
+
+    .fits__list {
+        padding-bottom: 11px;
+    }
+
+    .fits__img-box {
+        padding-top: 49px;
+    }
+}

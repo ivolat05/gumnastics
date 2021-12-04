@@ -1,5 +1,5 @@
 .hall {
-    margin-bottom: 90px;
+    margin-bottom: 88px;
     .container {
         position: relative;
     }
@@ -52,7 +52,7 @@
 
 .hall__wrapp:nth-child(2n + 1) {
     flex-direction: row-reverse;
-    justify-content: start;
+    justify-content: flex-end;
     .hall__list {
         margin-left: 30px;
     }
