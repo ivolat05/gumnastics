@@ -10,7 +10,7 @@
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 20px;
     background: linear-gradient(96.38deg, #ebf2fa 0%, rgba(235, 242, 250, 0) 100%) no-repeat center left;
     border-radius: 20px 0px 0px 20px;
     z-index: -1;
@@ -21,7 +21,7 @@
 }
 
 .fits__wrapp-inner {
-    max-width: 462px;
+    max-width: 460px;
 }
 
 .fits__img-box {
@@ -33,6 +33,9 @@
     justify-content: space-between;
 }
 
+.fits__img {
+    border-radius: 20px;
+}
 .fits__img:nth-child(1) {
     margin-right: 31px;
     position: relative;
