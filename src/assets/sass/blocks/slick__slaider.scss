@@ -130,3 +130,31 @@
         }
     }
 }
+
+.foto__slaider {
+    width: 405px;
+    height: 294px;
+    margin: 0 auto;
+    margin: 80px auto;
+    .slick-track {
+    }
+    .slick-list {
+        overflow: visible;
+    }
+    .slick-active {
+        .foto-img {
+            transform: scale(1.6);
+            padding: 15px;
+            background: #fff;
+        }
+    }
+
+    .slick-next {
+        top: 51%;
+        right: -77px;
+    }
+    .slick-prev {
+        top: 51%;
+        left: 0;
+    }
+}

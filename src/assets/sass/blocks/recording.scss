@@ -1,0 +1,65 @@
+.recording {
+    margin-bottom: 90px;
+}
+
+.recording__wrapp {
+    padding: 60px;
+    background: #3a81cf;
+    border-radius: 20px;
+}
+
+.recording-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+.recording-text {
+    font-family: "Gilroy";
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #ffffff;
+    padding-bottom: 41px;
+}
+
+.recording-input {
+    width: 346px;
+    background: none;
+    outline: none;
+    border: 1px solid #ffffff;
+    border-radius: 45px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+    padding: 14px 30px;
+    &::placeholder {
+        color: #fff;
+    }
+}
+
+.recording-btn {
+    width: 346px;
+    padding: 14px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #3a81cf;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 45px;
+    border: none;
+    outline: none;
+}
+
+.recording-form {
+    display: flex;
+    justify-content: space-between;
+}

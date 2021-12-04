@@ -2591,3 +2591,30 @@ $('.reviews__slaider').slick({
     arrows: false,
     dots: true
 });
+
+// slaider foto
+
+
+$('.foto__slaider').not('.slick-initialized').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $(".foto-slick-prev"),
+    nextArrow: $(".foto-slick-next"),
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+        }
+    },
+    {
+        breakpoint: 780,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+    }
+    ]
+});

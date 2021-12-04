@@ -1,0 +1,47 @@
+.foto {
+    margin-bottom: 76px;
+    .container {
+        position: relative;
+    }
+}
+
+.foto-title {
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    padding-bottom: 22px;
+    text-align: center;
+}
+
+.foto-img {
+    width: 405px;
+    height: 294px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.foto__wrapp {
+    overflow: hidden;
+}
+
+.foto-slick-prev,
+.foto-slick-next {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background: none;
+    top: 59%;
+    transform: translateY(-50%);
+    z-index: 4;
+}
+.foto-slick-prev {
+    left: -36px;
+}
+
+.foto-slick-next {
+    right: -50px;
+}

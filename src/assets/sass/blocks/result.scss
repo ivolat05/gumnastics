@@ -1,0 +1,59 @@
+.result {
+    margin-bottom: 90px;
+    .container {
+        position: relative;
+    }
+}
+
+.result__wrapp-img {
+    width: 289px;
+    height: 303px;
+    border-radius: 20px;
+}
+
+.result-img {
+    width: 490px;
+    height: 610px;
+    border-radius: 20px;
+}
+
+.result__wrapp {
+    padding: 90px 0 90px 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.result__coll {
+    width: 54%;
+}
+.result-page {
+    width: 78%;
+}
+
+.result-title {
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    padding-bottom: 21px;
+}
+
+.result-subtitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.result-text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+
+.result__wrapp-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
