@@ -6,7 +6,7 @@
     background: none;
     padding: 0;
     position: relative;
-    z-index: 3;
+    z-index: 6;
 
     .menu__burger-img--active {
         display: none;
@@ -22,7 +22,7 @@
     }
 
     position: relative;
-    z-index: 3;
+    z-index: 6;
 }
 
 .burger {
@@ -31,4 +31,8 @@
 
 .burger-link-stop {
     display: none;
+}
+
+.stop {
+    overflow: hidden;
 }
