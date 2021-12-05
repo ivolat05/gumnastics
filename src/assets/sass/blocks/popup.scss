@@ -1,0 +1,171 @@
+.popup {
+    max-width: 594px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 20px 60px 20px;
+    background: #ffffff;
+    box-shadow: 0px 0px 14px rgba(239, 238, 234, 0.5);
+    border-radius: 20px;
+
+    .logo {
+        margin-bottom: 18px;
+    }
+}
+
+.popup-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.popup-text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.popup-input,
+.popup-select,
+.popup-textarea {
+    width: 86%;
+    min-height: 51px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    outline: none;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #444444;
+    padding: 14px 20px;
+}
+
+.popup-select {
+    margin-bottom: 31px;
+    margin-top: -4px;
+    appearance: none;
+    background: url("../../assets/img/select-arrow.svg") right 20px center no-repeat;
+}
+
+.popup-textarea {
+    resize: none;
+    height: 124px;
+    margin-bottom: 28px;
+}
+
+.red {
+    position: relative;
+    width: 86%;
+    margin-bottom: 28px;
+    input {
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+.red-text {
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 21px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #444444;
+
+    .red-1 {
+        color: #fc3f1d;
+    }
+}
+
+.popup-btn {
+    background: #3a81cf;
+    border-radius: 35px;
+    width: 85.5%;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    padding: 14px;
+    cursor: pointer;
+    &:hover {
+        background: #3c8fe7;
+    }
+}
+
+.red-del + .red-text {
+    display: none;
+}
+
+.recording-red {
+    margin-bottom: 19px;
+}
+
+.popup-reviews {
+    .popup-title {
+        padding-bottom: 72px;
+    }
+}
+
+.popup-message {
+    .popup-title {
+        width: 73%;
+        padding-bottom: 32px;
+    }
+}
+
+.popup-news-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #3a81cf;
+    padding-bottom: 32px;
+}
+
+.popup-news-img {
+    width: 474px;
+    height: 356px;
+    border-radius: 20px;
+    margin-bottom: 33px;
+}
+
+.popup-video-box {
+    width: 474px;
+    height: 356px;
+    border-radius: 20px;
+    margin-bottom: 33px;
+    overflow: hidden;
+}
+
+.popup-news-text {
+    font-family: "Gilroy";
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #323232;
+    padding-bottom: 11px;
+}
+
+.popup-news,
+.popup-video {
+    padding: 60px;
+}

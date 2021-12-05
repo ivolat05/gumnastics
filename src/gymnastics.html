@@ -2,3 +2,84 @@
 layout: default
 title: Гимнастика
 ---
+
+{{>header}}
+{{>breadcrumb-gymnastics}}
+{{>main__box-gymnastics}}
+{{>benefits-gymnastics}}
+{{>fits}}
+{{>program}}
+{{>foto}}
+{{>price-gymnastics}}
+{{>contact}}
+{{>map}}
+{{>footer}}
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;"></script>
+<script>
+    // map yandex
+    ymaps.ready(init);
+    function init() {
+        var myMap = new ymaps.Map("map", {
+            center: [53.9354950, 27.582980],
+            controls: [],
+            zoom: 17
+        },
+            {
+                // Зададим опции для элементов управления.
+                geolocationControlFloat: 'right',
+                zoomControlSize: 'small',
+                zoomControlPosition: { right: 10, top: '250px' }
+            }
+        );
+
+        myMap.behaviors.disable('scrollZoom');
+
+        // Создаём макет содержимого.
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                hintContent: 'swimming.by',
+                balloonContent: 'swimming.by'
+
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: './assets/img/map.svg',
+                // Размеры метки.
+                iconImageSize: [30, 30],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-20, -130]
+            }),
+
+            myPlacemarkWithContent = new ymaps.Placemark([53.936290, 27.583130], {
+                hintContent: 'swimming.by' + '<br>' + 'до 23.00',
+                balloonContent: 'swimming.by' + '<br>' + 'до 23.00',
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#imageWithContent',
+                // Своё изображение иконки метки.
+                iconImageHref: './assets/img/map.svg',
+                // Размеры метки.
+                iconImageSize: [115, 115],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-60, -59],
+                // Смещение слоя с содержимым относительно слоя с картинкой.
+                iconContentOffset: [50, 50],
+                // Макет содержимого.
+                iconContentLayout: MyIconContentLayout
+            });
+
+        myMap.geoObjects
+            .add(myPlacemark)
+            .add(myPlacemarkWithContent);
+
+    }
+</script>

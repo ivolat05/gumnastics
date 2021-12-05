@@ -161,3 +161,26 @@ $('.foto__slaider').not('.slick-initialized').slick({
     }
     ]
 });
+
+// удаление добовление звездочки в input
+const popupFormInput = document.querySelectorAll('.popup-input-fix');
+
+popupFormInput.forEach((item) => {
+    item.addEventListener('click', function () {
+        item.classList.add('red-del');
+
+    })
+
+    document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
+        popupFormInput.forEach((item) => {
+
+            if (!$(item).is(":focus") && item.value == '') {
+                item.classList.remove('red-del');
+            }
+        });
+    });
+
+});
+
+
+
