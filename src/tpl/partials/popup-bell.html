@@ -1,4 +1,7 @@
-<div class="popup popup-bell">
+<div id='popup-bell' class="popup mfp-hide">
+    <button class="popup--close" onClick="closePopup();">
+        <img src="./assets/img/popup-close.svg" alt="" class="popup__close-img">
+    </button>
     <a href="index.html" class="logo">
         <img class='logo-img' src="./assets/img/logo.svg" alt="">
         <img class='logo-img-2' src="./assets/img/logo-2.svg" alt="">
@@ -17,7 +20,7 @@
         <input class="popup-input-fix popup-input" type="text">
         <span class='red-text'>Телефон<span class='red-1'>*</span></span>
     </label>
-    <button class="popup-btn">
+    <a href='#popup-message' class="popup-btn popup-content">
         Отправить
-    </button>
+    </a>
 </div>

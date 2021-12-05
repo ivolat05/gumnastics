@@ -44,7 +44,7 @@
                                     <img src="./assets/img/viber.svg" alt="">
                                 </a>
                             </div>
-                            <a href='#' class="header__link open-bell">
+                            <a href='#popup-bell' class="header__link popup-content">
                                 заказать звонок
                             </a>
     
@@ -72,27 +72,27 @@
                                     </ul>
                                 </li>
                                 <li class="nav__list-inner">
-                                    <a href="#" class="nav__list-link scroll-link">
+                                    <a href="#program" class="nav__list-link scroll-link">
                                         Программа
                                     </a>
                                 </li>
                                 <li class="nav__list-inner">
-                                    <a href="#" class="nav__list-link nav__list-link-active scroll-link">
+                                    <a href="#price" class="nav__list-link nav__list-link-active scroll-link">
                                         Стоимость
                                     </a>
                                 </li>
                                 <li class="nav__list-inner">
-                                    <a href="#" class="nav__list-link scroll-link">
+                                    <a href="#trainer" class="nav__list-link scroll-link">
                                         О нас
                                     </a>
                                 </li>
                                 <li class="nav__list-inner">
-                                    <a href="#" class="nav__list-link scroll-link">
+                                    <a href="#review" class="nav__list-link scroll-link">
                                         Отзывы
                                     </a>
                                 </li>
                                 <li class="nav__list-inner">
-                                    <a href="#" class="nav__list-link scroll-link">
+                                    <a href="#contacts" class="nav__list-link scroll-link">
                                         Контакты
                                     </a>
                                 </li>
@@ -119,9 +119,9 @@
                 </div>
     
                 <div class="burger">
-                    <div class="burger-link open-bell">
+                    <a href='#popup-bell' class="burger-link popup-content">
                         <img class="burger-link-img" src="./assets/img/burger-phone.svg" alt="">
-                    </div>
+                    </a>
                     <button class="menu__burger">
                         <img src="./assets/img/burger.svg" alt="" class="menu__burger-img">
                         <img class="menu__burger-img--active" src="./assets/img/burger-active.svg" alt="">
@@ -132,7 +132,7 @@
     </header><div class="breadcrumb">
         <div class="container">
             <ul class="breadcrumb__list">
-                <li><a href="#">Главная </a></li>
+                <li><a href="index.html">Главная </a></li>
                 <li><a href="#">Направления</a></li>
                 <li>Курс “Жизнь без боли”</li>
             </ul>
@@ -155,7 +155,7 @@
             </div>
         </div>
     
-    </main><div class="author">
+    </main><div id='trainer' class="author">
         <div class="container">
             <div class="author__wrapp">
                 <div class="author__info">
@@ -340,7 +340,7 @@
                 </div>
             </div>
         </div>
-    </div><div class="program program-course">
+    </div><div id='program' class="program program-course">
         <div class="container">
             <div class="program-title">
                 В программу входит:
@@ -444,17 +444,17 @@
                 <div class="buy-stock">
                     Акция действует до 22.12.2021
                 </div>
-                <a href="#" class="buy-btn">
+                <a href="#popup-recording" class="buy-btn popup-content">
                     Записаться на курс
                 </a>
             </div>
         </div>
     </div>
-    <div class="contact">
+    <div id='contacts' class="contact">
         <div class="container">
             <div class="contact__wrapp">
                 <div class="contact__info">
-                    <a href="#" class="logo">
+                    <a href="index.html" class="logo">
                         <img class='logo-img' src="./assets/img/logo.svg" alt="">
                         <div class="logo-text">
                             swimming.by
@@ -498,9 +498,9 @@
                     <input class="contact-input" type="text" placeholder="Ваше имя">
                     <input class="contact-input" type="text" placeholder="Ваш телефон">
                     <textarea class='contact-textarea' placeholder="Сообщение"></textarea>
-                    <button class="contact-btn" type='submit'>
+                    <a href='#popup-message' class="contact-btn popup-content">
                         Отправить
-                    </button>
+                    </a>
                 </form>
             </div>
         </div>
@@ -514,6 +514,200 @@
         </div>
     </footer>
     
+    <div id='popup-bell' class="popup mfp-hide">
+        <button class="popup--close" onClick="closePopup();">
+            <img src="./assets/img/popup-close.svg" alt="" class="popup__close-img">
+        </button>
+        <a href="index.html" class="logo">
+            <img class='logo-img' src="./assets/img/logo.svg" alt="">
+            <img class='logo-img-2' src="./assets/img/logo-2.svg" alt="">
+            <div class="logo-text">
+                swimming.by
+            </div>
+        </a>
+        <div class="popup-title">
+            Заказать звонок
+        </div>
+        <div class="popup-text">
+            Оставьте ваши контактные данные и в ближайшее время мы свяжемся с вами
+        </div>
+        <input type="text" class="popup-input" placeholder="Ваше имя">
+        <label class="red">
+            <input class="popup-input-fix popup-input" type="text">
+            <span class='red-text'>Телефон<span class='red-1'>*</span></span>
+        </label>
+        <a href='#popup-message' class="popup-btn popup-content">
+            Отправить
+        </a>
+    </div><div id='popup-recording' class="popup popup-recording mfp-hide">
+        <button class="popup--close" onClick="closePopup();">
+            <img src="./assets/img/popup-close.svg" alt="" class="popup__close-img">
+        </button>
+        <a href="index.html" class="logo">
+            <img class='logo-img' src="./assets/img/logo.svg" alt="">
+            <img class='logo-img-2' src="./assets/img/logo-2.svg" alt="">
+            <div class="logo-text">
+                swimming.by
+            </div>
+        </a>
+        <div class="popup-title">
+            Записаться
+        </div>
+        <div class="popup-text">
+            Оставьте ваши контактные данные и в ближайшее время мы свяжемся с вами
+        </div>
+        <input type="text" class="popup-input" placeholder="Ваше имя">
+        <label class="red recording-red">
+            <input class="popup-input-fix popup-input" type="tel">
+            <span class='red-text'>Телефон<span class='red-1'>*</span></span>
+        </label>
+        <label class="red recording-red">
+            <input class="popup-input-fix popup-input" type="email">
+            <span class='red-text'>E-mail<span class='red-1'>*</span></span>
+        </label>
+        <select class="popup-select">
+            <option>
+                Пробное занятие
+            </option>
+            <option>
+                Пробное занятие
+            </option>
+            <option>
+                Пробное занятие
+            </option>
+        </select>
+        <a href='#popup-message-application' class="popup-btn popup-content">
+            Отправить
+        </a>
+    </div><div id='popup-reviews' class="popup popup-reviews mfp-hide">
+        <button class="popup--close" onClick="closePopup();">
+            <img src="./assets/img/popup-close.svg" alt="" class="popup__close-img">
+        </button>
+        <a href="index.html" class="logo">
+            <img class='logo-img' src="./assets/img/logo.svg" alt="">
+            <img class='logo-img-2' src="./assets/img/logo-2.svg" alt="">
+            <div class="logo-text">
+                swimming.by
+            </div>
+        </a>
+        <div class="popup-title">
+            Оставить отзыв
+        </div>
+    
+    
+        <label class="red recording-red">
+            <input class="popup-input-fix popup-input" type="text">
+            <span class='red-text'>Ваше имя<span class='red-1'>*</span></span>
+        </label>
+        <label class="red recording-red">
+            <input class="popup-input-fix popup-input" type="tel">
+            <span class='red-text'>Телефон<span class='red-1'>*</span></span>
+        </label>
+        <textarea class='popup-textarea' placeholder="Отзыв"></textarea>
+        <a href='#popup-message-reviews' class="popup-btn popup-content">
+            Отправить
+        </a>
+    </div><div id='popup-message' class="popup popup-message mfp-hide">
+        <button class="popup--close" onClick="closePopup();">
+            <img src="./assets/img/popup-close.svg" alt="" class="popup__close-img">
+        </button>
+        <a href="index.html" class="logo">
+            <img class='logo-img' src="./assets/img/logo.svg" alt="">
+            <img class='logo-img-2' src="./assets/img/logo-2.svg" alt="">
+            <div class="logo-text">
+                swimming.by
+            </div>
+        </a>
+        <div class="popup-title">
+            Ваше сообщение отправлена
+        </div>
+    
+    
+        <button class="popup-btn" onClick="closePopup();">
+            Отправить
+        </button>
+    </div><div id='popup-news' class="popup popup-news mfp-hide">
+        <button class="popup--close" onClick="closePopup();">
+            <img src="./assets/img/popup-close.svg" alt="" class="popup__close-img">
+        </button>
+        <div class="popup-news-title">
+            Оздоровительная гимнастика
+        </div>
+        <img class="popup-news-img" src="./assets/img/popup-img.png" alt="">
+        <div class="popup-news-text">
+            Методика программы заключается в том, что тренер в бассейне и тренер зала совместно разрабатывает индивидуальный
+            план занятий учащихся.
+        </div>
+        <div class="popup-news-text">
+            30 минутное занятие в зале представляет собой комплекс упражнений, направленных на исправление и коррекцию
+            нарушений осанки, профилактику и исправление плоскостопия. Данные упражнения также помогают подготовить организм
+            к последующему выходу в воду. Методика включает в себя упражнения, специально подобранные для каждой возрастной
+            группы:
+        </div>
+    
+    </div><div id='popup-video' class="popup popup-video mfp-hide">
+        <button class="popup--close" onClick="closePopup();">
+            <img src="./assets/img/popup-close.svg" alt="" class="popup__close-img">
+        </button>
+        <div class="popup-news-title">
+            Оздоровительная гимнастика
+        </div>
+        <div class="popup-video-box">
+            <iframe class='popup-video-inframe' src="https://www.youtube.com/embed/kndqIj8Qgok" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="popup-news-text">
+            Методика программы заключается в том, что тренер в бассейне и тренер зала совместно разрабатывает индивидуальный
+            план занятий учащихся.
+        </div>
+    
+        <div class="popup-news-text">
+            30 минутное занятие в зале представляет собой комплекс упражнений, направленных на исправление и коррекцию
+            нарушений осанки, профилактику и исправление плоскостопия. Данные упражнения также помогают подготовить организм
+            к последующему выходу в воду. Методика включает в себя упражнения, специально подобранные для каждой возрастной
+            группы:
+        </div>
+    
+    </div><div id='popup-message-reviews' class="popup popup-message mfp-hide">
+        <button class="popup--close" onClick="closePopup();">
+            <img src="./assets/img/popup-close.svg" alt="" class="popup__close-img">
+        </button>
+        <a href="index.html" class="logo">
+            <img class='logo-img' src="./assets/img/logo.svg" alt="">
+            <img class='logo-img-2' src="./assets/img/logo-2.svg" alt="">
+            <div class="logo-text">
+                swimming.by
+            </div>
+        </a>
+        <div class="popup-title">
+            Ваш отзыв отправлен
+        </div>
+    
+    
+        <button class="popup-btn" onClick="closePopup();">
+            Отправить
+        </button>
+    </div><div id='popup-message-application' class="popup popup-message mfp-hide">
+        <button class="popup--close" onClick="closePopup();">
+            <img src="./assets/img/popup-close.svg" alt="" class="popup__close-img">
+        </button>
+        <a href="index.html" class="logo">
+            <img class='logo-img' src="./assets/img/logo.svg" alt="">
+            <img class='logo-img-2' src="./assets/img/logo-2.svg" alt="">
+            <div class="logo-text">
+                swimming.by
+            </div>
+        </a>
+        <div class="popup-title">
+            Ваше заявка отправлена
+        </div>
+    
+    
+        <button class="popup-btn" onClick="closePopup();">
+            Отправить
+        </button>
+    </div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;"></script>
     <script>
         // map yandex

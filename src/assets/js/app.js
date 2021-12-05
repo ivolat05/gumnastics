@@ -1,10 +1,39 @@
 //= components/slick.min.js
 //= components/jquery.mCustomScrollbar.js
+//= components/jquery.magnific-popup.js
+
+
+// popup
+$('.popup-content').magnificPopup({
+    type: 'inline'
+});
+
+// popup close
+function closePopup() {
+    $.magnificPopup.close();
+}
+
+$(".scroll-link").click(function () {
+    var target = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(target).offset().top - 100
+    }, 2500);
+    return false;
+});
+
 
 // slaider main__box
 $('.main__box-slaider').slick({
     infinite: true,
     slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true
+});
+
+$('.information__wrapp').slick({
+    infinite: true,
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     dots: true

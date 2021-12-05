@@ -169,3 +169,31 @@
 .popup-video {
     padding: 60px;
 }
+
+.popup {
+    position: relative;
+}
+
+.popup--close {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 20px;
+    top: 21px;
+    background: none;
+}
+
+.mfp-close-btn-in .mfp-close {
+    display: none;
+}
+
+.popup-video-inframe {
+    width: 100%;
+    height: 100%;
+}

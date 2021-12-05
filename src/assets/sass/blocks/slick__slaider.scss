@@ -97,6 +97,40 @@
     }
 }
 
+.information__wrapp {
+    position: relative;
+    .slick-dots {
+        position: absolute;
+        left: 50%;
+        bottom: -40px;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 62px;
+    }
+    .slick-dots li button {
+        text-indent: -9999px;
+        width: 8px;
+        height: 8px;
+
+        border-radius: 8px;
+        padding: 0;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin: 0 2px;
+        background: #ffffff;
+        border: 0.5px solid #3a81cf;
+        box-sizing: border-box;
+    }
+    .slick-dots .slick-active {
+        button {
+            background: #3a81cf;
+        }
+    }
+}
+
 .main__box-slaider {
     .slick-dots {
         position: absolute;
