@@ -56,6 +56,10 @@ ul {
     padding-right: 20px;
 }
 
+.page {
+    overflow: hidden;
+}
+
 @import "../sass/blocks/burger.scss";
 @import "../sass/blocks/header.scss";
 @import "../sass/blocks/main.scss";
