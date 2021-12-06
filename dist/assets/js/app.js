@@ -2563,7 +2563,7 @@ $('.traniner-slaider').slick({
         }
     },
     {
-        breakpoint: 780,
+        breakpoint: 992,
         settings: {
             slidesToShow: 1,
             slidesToScroll: 1
@@ -2581,14 +2581,14 @@ document.querySelector('.test').addEventListener('click', function () {
         nextArrow: '<button class="slick-btn slick-next"><img src="./assets/img/arrow-right.svg" alt="next"></button>',
         arrows: true,
         responsive: [{
-            breakpoint: 1024,
+            breakpoint: 1380,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1
             }
         },
         {
-            breakpoint: 780,
+            breakpoint: 992,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -2609,14 +2609,14 @@ $('.price__slaider').not('.slick-initialized').slick({
     nextArrow: '<button class="slick-btn slick-next"><img src="./assets/img/arrow-right.svg" alt="next"></button>',
     arrows: true,
     responsive: [{
-        breakpoint: 1024,
+        breakpoint: 1380,
         settings: {
             slidesToShow: 2,
             slidesToScroll: 1
         }
     },
     {
-        breakpoint: 780,
+        breakpoint: 992,
         settings: {
             slidesToShow: 1,
             slidesToScroll: 1

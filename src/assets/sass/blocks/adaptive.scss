@@ -1,3 +1,10 @@
+@media (max-width: 1380px) {
+    .price__slaider-acive {
+        max-width: 802px;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 1300px) {
     .header__col {
         width: 81%;
@@ -208,6 +215,14 @@
     }
 }
 @media (max-width: 992px) {
+    .price__slaider-acive {
+        max-width: 410px;
+        margin: 0 auto;
+    }
+    .price-btn {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .main {
         margin-bottom: 40px;
     }
@@ -261,6 +276,12 @@
 }
 
 @media (max-width: 768px) {
+    .price__conteiner-btn {
+        flex-direction: column;
+    }
+    .price-btn {
+        margin-bottom: 20px;
+    }
     .header {
         padding: 10px 0;
         .logo {
@@ -487,6 +508,103 @@
     }
     .fits__wrapp {
         padding-bottom: 35px;
+    }
+
+    .fits {
+        margin-bottom: 30px;
+    }
+    .price-title {
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        padding-bottom: 21px;
+        padding-left: 22px;
+    }
+    .price-btn {
+        font-size: 16px;
+        line-height: 20px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .price__conteiner-btn {
+        padding-bottom: 0;
+    }
+    .price__slaider-box {
+        margin-top: 9px;
+        padding: 20px;
+        min-height: 340px;
+    }
+    .price__slaider-title {
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 5px;
+    }
+    .price__slaider-subtitle {
+        font-size: 14px;
+        line-height: 18px;
+        padding-bottom: 32px;
+    }
+    .price__slaider-text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .price__slaider-btn {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .price-old {
+        font-size: 28px;
+        line-height: 60px;
+        span {
+            font-size: 15px;
+            line-height: 25px;
+        }
+        &::before {
+            width: 80px;
+        }
+    }
+
+    .price-discount {
+        top: 10px;
+        left: 10px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .price__box-select {
+        margin: 0 auto 5px;
+        padding: 12px 15px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .price-tody {
+        font-size: 48px;
+        line-height: 60px;
+        span {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+    .price__slaider-box {
+        width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .price__box-select {
+        width: 100%;
+    }
+    .price__slaider-acive {
+        max-width: 290px;
+    }
+    .price .slick-next {
+        right: -31px;
+    }
+    .price .slick-prev {
+        left: -16px;
     }
 }
 
