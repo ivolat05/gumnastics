@@ -2584,34 +2584,6 @@ $('.traniner-slaider').slick({
     ]
 });
 
-document.querySelector('.test').addEventListener('click', function () {
-    $('.price__slaider-2').not('.slick-initialized').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        prevArrow: '<button class="slick-btn slick-prev"><img src="./assets/img/arrow-left.svg" alt="prev"></button>',
-        nextArrow: '<button class="slick-btn slick-next"><img src="./assets/img/arrow-right.svg" alt="next"></button>',
-        arrows: true,
-        responsive: [{
-            breakpoint: 1380,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-        ]
-    });
-    $('.popup-content').magnificPopup({
-        type: 'inline'
-    });
-})
 
 // slaider trainer
 
@@ -2711,11 +2683,21 @@ popupFormInput.forEach((item) => {
 
 
 
+
+$('.buy__wrapp').not('.slick-initialized').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: '<button class="slick-btn slick-prev"><img src="./assets/img/arrow-left.svg" alt="prev"></button>',
+    nextArrow: '<button class="slick-btn slick-next"><img src="./assets/img/arrow-right.svg" alt="next"></button>',
+    arrows: true,
+
+});
+
 // popup
 $('.popup-content').magnificPopup({
     type: 'inline'
 });
-
 window.addEventListener("resize", function () {
     $('.popup-content').magnificPopup({
         type: 'inline'
@@ -2723,3 +2705,32 @@ window.addEventListener("resize", function () {
 
 
 });
+
+document.querySelector('.test').addEventListener('click', function () {
+    $('.price__slaider-2').not('.slick-initialized').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '<button class="slick-btn slick-prev"><img src="./assets/img/arrow-left.svg" alt="prev"></button>',
+        nextArrow: '<button class="slick-btn slick-next"><img src="./assets/img/arrow-right.svg" alt="next"></button>',
+        arrows: true,
+        responsive: [{
+            breakpoint: 1380,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+        ]
+    });
+    $('.popup-content').magnificPopup({
+        type: 'inline'
+    });
+})

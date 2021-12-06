@@ -1,5 +1,18 @@
 .buy {
-    margin-bottom: 83px;
+    margin-bottom: 72px;
+}
+
+.buy__wrapp {
+    max-width: 600px;
+    margin: 0 auto;
+
+    .slick-next {
+        right: -40px;
+    }
+
+    .slick-prev {
+        left: -49px;
+    }
 }
 
 .buy-title {
@@ -8,12 +21,12 @@
     line-height: 38px;
     text-align: center;
 
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .buy__box {
     max-width: 594px;
-    margin: 0 auto;
+    margin: 10px;
     background: #ffffff;
     box-shadow: 0px 0px 11px #efeeea;
     border-radius: 20px;

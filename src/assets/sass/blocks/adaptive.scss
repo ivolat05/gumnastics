@@ -33,6 +33,16 @@
 }
 
 @media (max-width: 1300px) {
+    .description-info {
+        width: 50%;
+    }
+    .diagnosis-coll {
+        width: 58%;
+    }
+
+    .diagnosis-coll-2 {
+        width: 40%;
+    }
     .contact__form {
         width: 60%;
     }
@@ -111,6 +121,9 @@
     }
 }
 @media (max-width: 1099px) {
+    .description-info {
+        width: 40%;
+    }
     .information__wrapp-box {
         width: 290px;
     }
@@ -245,7 +258,8 @@
         margin: 0 auto;
     }
     .fits__img:nth-child(1),
-    .fits__img:nth-child(2) {
+    .fits__img:nth-child(2),
+    .fits-results .fits__img:nth-child(1) {
         top: 0;
         width: 49%;
         height: 100%;
@@ -281,6 +295,53 @@
     }
 }
 @media (max-width: 992px) {
+    .description-img {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .description-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .description__wrapp {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .description-info {
+        width: 100%;
+    }
+
+    .diagnosis__wrapp {
+        flex-direction: column;
+    }
+    .diagnosis-coll,
+    .diagnosis-coll-2 {
+        width: 100%;
+    }
+    .author__wrapp {
+        flex-direction: column-reverse;
+        align-items: center;
+        position: relative;
+    }
+
+    .author-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .author-img {
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    .author__info {
+        width: 100%;
+    }
+
     .contact__info,
     .contact__form {
         width: 100%;
@@ -442,6 +503,140 @@
     }
 }
 @media (max-width: 576px) {
+    .description {
+        margin-bottom: -1px;
+    }
+    .description-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .description__box-title {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .description__box-text {
+        font-size: 18px;
+        line-height: 23px;
+        padding-bottom: 22px;
+    }
+    .description-span {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .description-text {
+        font-size: 18px;
+        line-height: 23px;
+        padding-bottom: 19px;
+    }
+
+    .description-img {
+        width: 320px;
+        height: 320px;
+        margin-bottom: 12px;
+    }
+
+    .fits-causes {
+        .fits__head {
+            padding-top: 19px;
+        }
+        .fits__img-box {
+            padding-top: 0;
+        }
+    }
+
+    .diagnosis {
+        margin-bottom: 0;
+    }
+    .author {
+        margin-bottom: 44px;
+    }
+
+    .diagnosis-img {
+        width: 96px;
+        height: 89px;
+        margin-right: 8px;
+    }
+
+    .diagnosis-img-fix {
+        height: 149px;
+    }
+    .diagnosis-text {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .diagnosis-title {
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 23px;
+    }
+    .diagnosis-box {
+        margin-bottom: 21px;
+    }
+    .author__box-experience {
+        margin-bottom: 23px;
+    }
+    .author__box-title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .author__box-text {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .author-text {
+        font-size: 18px;
+        line-height: 23px;
+        padding-bottom: 21px;
+    }
+    .main__box {
+        margin-bottom: 39px;
+    }
+    .author-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .author-img {
+        margin-top: 46px;
+        width: 320px;
+        height: 320px;
+        margin-bottom: 18px;
+    }
+    .main__box-title {
+        font-size: 24px;
+        line-height: 29px;
+        padding-bottom: 22px;
+    }
+
+    .main__box-text {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 19px;
+    }
+
+    .main__box-slaider {
+        margin-bottom: 18px;
+        img {
+            height: 224px;
+        }
+    }
+
+    .breadcrumb {
+        padding-top: 11px;
+        padding-bottom: 20px;
+    }
+    ul.breadcrumb__list li {
+        font-size: 12px;
+        line-height: 14px;
+        a {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+
     .popup {
         padding: 20px;
         .logo {
@@ -999,6 +1194,112 @@
     .price .slick-prev {
         left: -16px;
     }
+
+    .fits-causes {
+        margin-bottom: 23px;
+    }
+
+    .program-course .program__text {
+        width: 327px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .fits-text {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .program-course {
+        margin-bottom: 31px;
+    }
+    .fits-results {
+        margin-bottom: 39px;
+        .fits__head {
+            padding-right: 10px;
+            padding-bottom: 12px;
+        }
+    }
+
+    .fits-results .fits__wrapp {
+        padding-bottom: 16px;
+    }
+
+    .buy-title {
+        font-size: 20px;
+        line-height: 25px;
+        padding-bottom: 9px;
+    }
+
+    .buy--discount {
+        font-size: 16px;
+        line-height: 20px;
+
+        left: 29px;
+        top: 14px;
+    }
+    .buy-type {
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 5px;
+    }
+
+    .buy__price {
+        font-size: 48px;
+        line-height: 60px;
+        span {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+
+    .buy__price-old {
+        font-size: 24px;
+        line-height: 30px;
+        margin-right: 5px;
+        &::before {
+            width: 90px;
+        }
+        span {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    .buy-stock {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .buy__box {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .buy-name {
+        font-size: 14px;
+        line-height: 18px;
+        padding-bottom: 48px;
+    }
+
+    .buy-btn {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .buy__wrapp {
+        .slick-next {
+            transform: scale(0.7);
+            top: 43%;
+            right: -15px;
+        }
+
+        .slick-prev {
+            transform: scale(0.7);
+            top: 45%;
+            left: 0;
+        }
+    }
 }
 
 @media (max-width: 400px) {
@@ -1008,6 +1309,15 @@
 }
 
 @media (max-width: 340px) {
+    .diagnosis-img-fix {
+        height: 206px;
+    }
+    .author-img,
+    .description-img {
+        width: 90%;
+        height: 90%;
+    }
+
     .header__wrapp-col {
         padding-left: 59px;
     }
@@ -1029,5 +1339,15 @@
 
     .information__wrapp {
         width: 290px;
+    }
+    .program-course .program__text {
+        max-width: 290px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .buy__box {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
