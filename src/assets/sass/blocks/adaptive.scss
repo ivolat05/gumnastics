@@ -1,4 +1,18 @@
+@media (max-width: 1400px) {
+    .foto-slick-next {
+        right: -7px;
+    }
+    .foto-slick-prev {
+        left: 7px;
+    }
+}
 @media (max-width: 1380px) {
+    .foto-slick-next {
+        right: 90px;
+    }
+    .foto-slick-prev {
+        left: 105px;
+    }
     .price__slaider-acive {
         max-width: 802px;
         margin: 0 auto;
@@ -30,9 +44,30 @@
             right: -43px;
         }
     }
+
+    .foto__wrapp {
+        max-width: 1010px;
+        margin: 0 auto;
+    }
+
+    .foto__slaider {
+        width: 337px;
+
+        .slick-active {
+            .foto-img {
+                transform: scale(1.6);
+            }
+        }
+    }
 }
 
 @media (max-width: 1300px) {
+    .foto-slick-next {
+        right: 7px;
+    }
+    .foto-slick-prev {
+        left: 19px;
+    }
     .description-info {
         width: 50%;
     }
@@ -70,7 +105,9 @@
         width: 28%;
     }
 
-    .fits {
+    .fits,
+    .result,
+    .recording {
         .container {
             max-width: 1258px;
         }
@@ -96,6 +133,23 @@
     }
 }
 
+@media (max-width: 1210px) {
+    .result__wrapp-inner {
+        width: 95%;
+    }
+    .result__wrapp-img {
+        width: 217px;
+        height: 241px;
+    }
+    .result__coll {
+        width: 44%;
+    }
+    .recording-input:nth-child(2) {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
 @media (max-width: 1200px) {
     .fits__wrapp {
         padding-left: 45px;
@@ -103,9 +157,20 @@
     .fits__wrapp-inner {
         margin-right: 20px;
     }
+    .fits-pool {
+        .fits__head {
+            padding-left: 45px;
+        }
+    }
 }
 
 @media (max-width: 1123px) {
+    .fits-pool {
+        .fits__head {
+            padding-left: 20px;
+            padding-right: 0;
+        }
+    }
     .fits__img:nth-child(1) {
         margin-right: 5px;
     }
@@ -121,6 +186,33 @@
     }
 }
 @media (max-width: 1099px) {
+    .foto__wrapp {
+        max-width: 910px;
+    }
+    .foto-slick-next {
+        right: -9px;
+    }
+    .foto-slick-prev {
+        left: 5px;
+    }
+    .foto__slaider {
+        width: 300px;
+
+        .slick-active {
+            .foto-img {
+                transform: scale(1.6);
+            }
+        }
+    }
+
+    .result__wrapp-img {
+        width: 183px;
+        height: 203px;
+    }
+    .result__coll {
+        width: 44%;
+    }
+
     .description-info {
         width: 40%;
     }
@@ -413,6 +505,94 @@
     }
     .benefits-title {
         padding-bottom: 20px;
+    }
+
+    .hall__wrapp {
+        width: 100%;
+        flex-direction: column;
+    }
+    .hall__wrapp:nth-child(2n + 1) {
+        width: 100%;
+        flex-direction: column;
+        .hall__list {
+            margin-left: 0;
+        }
+    }
+    .hall-inner {
+        padding-left: 20px;
+    }
+    .hall__list {
+        width: 100%;
+    }
+
+    .hall-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .result__wrapp {
+        width: 100%;
+        padding-left: 20px;
+        flex-direction: column;
+    }
+    .result__coll {
+        width: 100%;
+    }
+    .result-page {
+        width: 100%;
+    }
+
+    .result__wrapp-inner {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .result__wrapp-img {
+        height: 100%;
+        width: 49%;
+    }
+    .result-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .recording-input:nth-child(2) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .recording-input {
+        margin-bottom: 20px;
+    }
+    .recording-form {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .foto-slick-next {
+        right: -9px;
+    }
+    .foto-slick-prev {
+        left: 5px;
+    }
+    .foto__slaider {
+        width: 82%;
+        margin-top: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+        .slick-list {
+            overflow: hidden;
+        }
+        .slick-active {
+            .foto-img {
+                width: 100%;
+                height: 100%;
+                transform: scale(1);
+                padding: 0;
+            }
+        }
+    }
+
+    .foto__slaider .slick-list {
+        overflow: hidden;
     }
 }
 
@@ -1300,11 +1480,196 @@
             left: 0;
         }
     }
+
+    .breadcrumb-swimming {
+        padding-bottom: 10px;
+    }
+    .main__box-swimming {
+        margin-bottom: 17px;
+    }
+    .us-swiming {
+        padding-top: 0;
+        .us-title {
+            font-size: 20px;
+            line-height: 24px;
+            padding-bottom: 23px;
+        }
+        .us__box-img {
+            margin-bottom: 11px;
+        }
+        .us__box {
+            max-width: 460px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .hall-inner {
+        padding-top: 58px;
+    }
+    .hall-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .hall-text {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .hall__list-inner {
+        padding-bottom: 23px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .hall__wrapp {
+        margin-bottom: 21px;
+    }
+    .hall__wrapp:nth-child(2n + 1) {
+        .hall__list-inner {
+            padding-bottom: 35px;
+        }
+        .hall__list-inner:nth-child(2) {
+            padding-bottom: 14px;
+        }
+        .hall__list-inner:nth-child(3) {
+            padding-bottom: 49px;
+        }
+        .hall__list-inner:nth-child(4) {
+            padding-bottom: 28px;
+        }
+    }
+
+    .hall {
+        margin-bottom: 55px;
+    }
+    .fits-pool {
+        .fits__head {
+            padding-top: 58px;
+        }
+
+        .fits__list-inner {
+            padding-bottom: 23px;
+        }
+
+        .fits__img-box {
+            padding-top: 2px;
+        }
+        .fits__wrapp {
+            padding-bottom: 22px;
+        }
+    }
+    .fits-pool .fits-text {
+        width: 320px;
+    }
+
+    .fits-pool .fits__wrapp-text {
+        padding-top: 14px;
+        padding-bottom: 21px;
+    }
+
+    .fits-pool {
+        margin-bottom: 13px;
+    }
+    .result-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .result__wrapp {
+        padding-top: 40px;
+        padding-bottom: 44px;
+    }
+
+    .result-subtitle {
+        font-size: 18px;
+        line-height: 23px;
+        padding-bottom: 7px;
+    }
+
+    .result-text {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .result {
+        margin-bottom: 38px;
+    }
+    .recording-input {
+        width: 100%;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .recording-btn {
+        width: 100%;
+    }
+    .recording__wrapp {
+        padding: 20px;
+    }
+
+    .recording-title {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .recording-text {
+        font-size: 18px;
+        line-height: 21px;
+        padding-bottom: 21px;
+    }
+    .recording {
+        margin-bottom: 38px;
+    }
+    .foto-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .foto {
+        margin-bottom: 38px;
+    }
+
+    .foto-slick-next {
+        right: 13px;
+    }
+    .foto-slick-prev {
+        left: 30px;
+    }
+
+    .price-swimming {
+        .price-title {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+    .main__box-gymnastics {
+        margin-bottom: 0;
+    }
+    .benefits-gymnastics {
+        margin-bottom: 26px;
+        .fits__wrapp {
+            padding-left: 11px;
+        }
+    }
+    .fits-gymanstics {
+        margin-bottom: 33px;
+        .fits__wrapp {
+            padding-left: 9px;
+        }
+    }
+    .program-gymanstics {
+        margin-bottom: 25px;
+    }
+    .price-gymnastics {
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 400px) {
     .main {
         background: url("../../assets/img/main-2.jpg") no-repeat center center/cover;
+    }
+
+    .foto__slaider {
+        width: 82%;
+        height: 184px;
     }
 }
 
@@ -1349,5 +1714,8 @@
     .buy__box {
         padding-left: 0px;
         padding-right: 0px;
+    }
+    .fits-pool .fits-text {
+        max-width: 300px;
     }
 }

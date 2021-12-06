@@ -139,11 +139,10 @@
 
 .foto__slaider {
     width: 405px;
-    height: 294px;
+
     margin: 0 auto;
     margin: 80px auto;
-    .slick-track {
-    }
+
     .slick-list {
         overflow: visible;
     }
@@ -153,14 +152,5 @@
             padding: 15px;
             background: #fff;
         }
-    }
-
-    .slick-next {
-        top: 51%;
-        right: -77px;
-    }
-    .slick-prev {
-        top: 51%;
-        left: 0;
     }
 }
