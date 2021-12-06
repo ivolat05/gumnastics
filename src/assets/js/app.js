@@ -25,10 +25,7 @@ navListLink.forEach((item) => {
 
 });
 
-// popup
-$('.popup-content').magnificPopup({
-    type: 'inline'
-});
+
 
 // popup close
 function closePopup() {
@@ -58,7 +55,22 @@ $('.information__wrapp').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
-    dots: true
+    dots: true,
+    responsive: [{
+        breakpoint: 998,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+        }
+    },
+    {
+        breakpoint: 768,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+    }
+    ]
 });
 
 //price tabs
@@ -97,7 +109,7 @@ $('.traniner-slaider').slick({
     nextArrow: '<button class="slick-btn slick-next"><img src="./assets/img/arrow-right.svg" alt="next"></button>',
     arrows: true,
     responsive: [{
-        breakpoint: 1024,
+        breakpoint: 1300,
         settings: {
             slidesToShow: 2,
             slidesToScroll: 1
@@ -136,6 +148,9 @@ document.querySelector('.test').addEventListener('click', function () {
             }
         }
         ]
+    });
+    $('.popup-content').magnificPopup({
+        type: 'inline'
     });
 })
 
@@ -235,3 +250,17 @@ popupFormInput.forEach((item) => {
 
 
 
+
+
+// popup
+$('.popup-content').magnificPopup({
+    type: 'inline'
+});
+
+window.addEventListener("resize", function () {
+    $('.popup-content').magnificPopup({
+        type: 'inline'
+    });
+
+
+});

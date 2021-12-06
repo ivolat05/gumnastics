@@ -1,5 +1,8 @@
 .reviews {
     margin-bottom: 90px;
+    .container {
+        position: relative;
+    }
 }
 .reviews__slaider {
     padding: 30px 30px 12px 30px;
@@ -34,4 +37,31 @@
     line-height: 22px;
     text-align: center;
     color: #242424;
+}
+
+.reviews__wrapp-title {
+    padding-bottom: 40px;
+}
+
+.reviews-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.reviews-link {
+    position: absolute;
+    top: 16px;
+    right: 0;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #3a81cf;
+    transition: 0.4s;
+    &:hover {
+        text-decoration: underline;
+    }
 }
