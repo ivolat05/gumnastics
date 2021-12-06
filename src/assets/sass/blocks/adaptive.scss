@@ -14,8 +14,32 @@
         padding-top: 0;
         width: 28%;
     }
+
+    .fits {
+        .container {
+            max-width: 1258px;
+        }
+    }
 }
 
+@media (max-width: 1200px) {
+    .fits__wrapp {
+        padding-left: 45px;
+    }
+    .fits__wrapp-inner {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1123px) {
+    .fits__img:nth-child(1) {
+        margin-right: 5px;
+    }
+
+    .fits__wrapp {
+        padding-left: 25px;
+    }
+}
 @media (max-width: 1099px) {
     .header {
         .container {
@@ -132,6 +156,55 @@
     }
     .program__box {
         margin: 20px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .fits {
+        .container {
+            max-width: 960px;
+        }
+    }
+    .fits__wrapp {
+        width: 100%;
+        flex-direction: column;
+        padding-left: 20px;
+        margin: 0 auto;
+    }
+    .fits__img:nth-child(1),
+    .fits__img:nth-child(2) {
+        top: 0;
+        width: 49%;
+        height: 100%;
+    }
+    .fits__img-wrapp {
+        width: 100%;
+    }
+    .fits__img-3 {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        padding: 0;
+        border-radius: 20px;
+        margin-top: 20px;
+        height: 100%;
+        width: 100%;
+        background: none;
+    }
+
+    .fits__img-box {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fits__wrapp-inner {
+        max-width: 100%;
+        margin-right: 0;
     }
 }
 @media (max-width: 992px) {
@@ -374,7 +447,49 @@
         font-size: 18px;
         line-height: 23px;
     }
+    .program {
+        margin-bottom: 0;
+    }
+    .fits-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .fits__head {
+        padding: 35px 30px 19px 20px;
+    }
+    .fits__list-inner {
+        font-size: 18px;
+        line-height: 23px;
+        padding-bottom: 21px;
+    }
+    .fits__content {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .fits__list {
+        padding-bottom: 2px;
+    }
+
+    .fits-btn {
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+    }
+    .fits__content {
+        padding-bottom: 20px;
+    }
+    .fits__img-box {
+        padding-top: 21px;
+    }
+    .fits__img-3 {
+        margin-top: 12px;
+    }
+    .fits__wrapp {
+        padding-bottom: 35px;
+    }
 }
+
 @media (max-width: 400px) {
     .main {
         background: url("../../assets/img/main-2.jpg") no-repeat center center/cover;
