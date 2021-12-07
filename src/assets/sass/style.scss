@@ -22,6 +22,10 @@ ul {
     list-style: none;
 }
 
+.safari input,
+.safari textarea {
+    box-shadow: none !important;
+}
 @media (min-width: 576px) {
     .container {
         max-width: 540px;

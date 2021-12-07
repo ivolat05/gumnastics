@@ -12,10 +12,14 @@
 }
 
 .price__conteiner-btn {
+    max-width: 726px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 41px;
+    margin: 0 auto 41px;
+    box-shadow: 0px 0px 11px #efeeea;
+    border-radius: 45px;
 }
 
 .price-btn {
@@ -31,7 +35,7 @@
     text-align: center;
     border-radius: 45px;
     transition: 0.4s;
-    box-shadow: 0px 0px 11px #efeeea;
+
     &:hover {
         background: #3a81cf;
         color: #fff;

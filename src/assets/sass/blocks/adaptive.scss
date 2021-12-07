@@ -21,7 +21,7 @@
     .trainer {
         .slick-next {
             top: 36%;
-            right: 41px;
+            right: -41px;
         }
         .slick-prev {
             top: 36%;
@@ -62,6 +62,12 @@
 }
 
 @media (max-width: 1300px) {
+    .price .slick-prev {
+        left: -48px;
+    }
+    .price .slick-next {
+        right: -56px;
+    }
     .foto-slick-next {
         right: 7px;
     }
@@ -136,10 +142,12 @@
 @media (max-width: 1210px) {
     .result__wrapp-inner {
         width: 95%;
+        margin-bottom: 0;
     }
     .result__wrapp-img {
-        width: 217px;
-        height: 241px;
+        width: 47%;
+        height: 100%;
+        margin: 10px;
     }
     .result__coll {
         width: 44%;
@@ -205,10 +213,6 @@
         }
     }
 
-    .result__wrapp-img {
-        width: 183px;
-        height: 203px;
-    }
     .result__coll {
         width: 44%;
     }
@@ -353,6 +357,7 @@
     .fits__img:nth-child(2),
     .fits-results .fits__img:nth-child(1) {
         top: 0;
+        margin: 0;
         width: 49%;
         height: 100%;
     }
@@ -365,12 +370,19 @@
         left: 0;
         padding: 0;
         border-radius: 20px;
-        margin-top: 20px;
+        margin-top: 0;
         height: 100%;
         width: 100%;
         background: none;
     }
 
+    .fits__img,
+    .fits__img-3,
+    .fits__img:nth-child(1),
+    .fits__img:nth-child(2),
+    .fits-results .fits__img:nth-child(1) {
+        margin: 10px;
+    }
     .fits__img-box {
         width: 100%;
         margin: 0 auto;
@@ -387,7 +399,7 @@
     }
 }
 @media (max-width: 992px) {
-    .description-img {
+    result__wrapp-img .description-img {
         margin-top: 50px;
         margin-bottom: 30px;
     }
@@ -544,15 +556,12 @@
 
     .result__wrapp-inner {
         width: 100%;
-        margin-bottom: 20px;
     }
-    .result__wrapp-img {
-        height: 100%;
-        width: 49%;
-    }
+
     .result-img {
-        width: 100%;
+        width: 98%;
         height: 100%;
+        margin: 10px 10px;
     }
 
     .recording-input:nth-child(2) {
@@ -597,6 +606,11 @@
 }
 
 @media (max-width: 768px) {
+    .fits__img:nth-child(1),
+    .fits__img:nth-child(2) {
+        max-width: 47%;
+    }
+
     .information-link {
         font-size: 16px;
         line-height: 20px;
@@ -624,9 +638,11 @@
         margin: 0 auto;
     }
     .price__conteiner-btn {
+        box-shadow: none;
         flex-direction: column;
     }
     .price-btn {
+        box-shadow: 0px 0px 11px #efeeea;
         margin-bottom: 20px;
     }
     .header {
@@ -657,7 +673,7 @@
     }
 
     .burger {
-        top: 1px;
+        top: -4px;
         right: 20px;
     }
     .header__wrapp-inner {
@@ -972,6 +988,7 @@
         padding-bottom: 11px;
     }
     .reviews-link {
+        right: 0;
         left: 50%;
         top: 108%;
         z-index: 3;
@@ -1415,8 +1432,8 @@
         font-size: 16px;
         line-height: 20px;
 
-        left: 29px;
-        top: 14px;
+        left: 4px;
+        top: 4 px;
     }
     .buy-type {
         font-size: 16px;
@@ -1660,6 +1677,24 @@
     .price-gymnastics {
         margin-bottom: 10px;
     }
+    .fits__img,
+    .fits__img-3,
+    .fits__img:nth-child(1),
+    .fits__img:nth-child(2),
+    .fits-results .fits__img:nth-child(1) {
+        margin: 5px;
+    }
+    .traniner-slaider {
+        max-width: 280px;
+    }
+    .trainer .slick-prev {
+        transform: scale(1);
+        left: -21px;
+    }
+    .trainer .slick-next {
+        transform: scale(1);
+        right: -36px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1670,6 +1705,15 @@
     .foto__slaider {
         width: 82%;
         height: 184px;
+        border-radius: 20px;
+    }
+
+    .result__wrapp-img,
+    .result-img {
+        margin: 5px;
+    }
+    .result__wrapp-img {
+        width: 48%;
     }
 }
 

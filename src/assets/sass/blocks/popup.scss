@@ -75,7 +75,8 @@
 .red-text {
     display: block;
     position: absolute;
-    top: 12px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 21px;
     font-weight: normal;
     font-size: 18px;
@@ -119,7 +120,7 @@
 
 .popup-reviews {
     .popup-title {
-        padding-bottom: 72px;
+        padding-bottom: 20px;
     }
 }
 
