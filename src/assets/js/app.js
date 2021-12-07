@@ -3,6 +3,13 @@
 //= components/jquery.magnific-popup.js
 
 
+$(function () {
+    if (navigator.userAgent.indexOf('Safari') != -1 &&
+        navigator.userAgent.indexOf('Chrome') == -1) {
+        $("body").addClass("safari");
+    }
+});
+
 $('.menu__burger').click((event) => {
     $('.menu__burger').toggleClass('burger__active'),
         $('body').toggleClass('stop'),
@@ -222,11 +229,13 @@ $('.buy__wrapp').not('.slick-initialized').slick({
 
 // popup
 $('.popup-content').magnificPopup({
-    type: 'inline'
+    type: 'inline',
+    mainClass: 'mfp-fade'
 });
 window.addEventListener("resize", function () {
     $('.popup-content').magnificPopup({
-        type: 'inline'
+        type: 'inline',
+        mainClass: 'mfp-fade'
     });
 
 
@@ -257,6 +266,7 @@ document.querySelector('.test').addEventListener('click', function () {
         ]
     });
     $('.popup-content').magnificPopup({
-        type: 'inline'
+        type: 'inline',
+        mainClass: 'mfp-fade'
     });
 })
