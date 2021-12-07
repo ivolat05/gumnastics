@@ -38,6 +38,7 @@
     background: #ffffff;
     border: 1px solid #3a81cf;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .question__box-head {
@@ -50,7 +51,6 @@
 
     color: #ffffff;
     background: #3a81cf;
-    border-radius: 10px 10px 0px 0px;
 }
 
 .question__box-body {

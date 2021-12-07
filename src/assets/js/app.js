@@ -1,7 +1,16 @@
 //= components/slick.min.js
 //= components/jquery.mCustomScrollbar.js
 //= components/jquery.magnific-popup.js
-
+//= components/wow.min.js
+//= components/jquery.maskedinput.min.js
+$(function () {
+    new WOW().init();
+    $("#telForm").mask("+3(999) 999-99-99");
+    $("#telForm-2").mask("+3(999) 999-99-99");
+    $("#telForm-3").mask("+3(999) 999-99-99");
+    $("#telForm-4").mask("+3(999) 999-99-99");
+    $("#telForm-5").mask("+3(999) 999-99-99");
+});
 
 $(function () {
     if (navigator.userAgent.indexOf('Safari') != -1 &&
@@ -9,6 +18,9 @@ $(function () {
         $("body").addClass("safari");
     }
 });
+
+
+
 
 $('.menu__burger').click((event) => {
     $('.menu__burger').toggleClass('burger__active'),
@@ -46,6 +58,7 @@ $(".scroll-link").click(function () {
     }, 2500);
     return false;
 });
+
 
 
 // slaider main__box
@@ -102,6 +115,44 @@ priceBtn.forEach((item) => {
             activeBtn.classList.add('btn-active');
             activeTab.classList.add('price__slaider-acive');
         }
+    });
+
+});
+
+// problem tabs
+const problemBtn = document.querySelectorAll('.proble__img-link');
+const problemTab = document.querySelectorAll('.problem__tab');
+problemBtn.forEach((item) => {
+    item.addEventListener('click', function () {
+        let activeBtn = item;
+        let activeId = activeBtn.getAttribute('data-tab');
+        let activeTab = document.querySelector(activeId);
+        let problemCol = document.querySelector('.problem__col');
+
+
+
+
+        if (!activeBtn.classList.contains('problem--active')) {
+            problemBtn.forEach(function (item) {
+                item.classList.remove('problem--active');
+            });
+            problemTab.forEach(function (item) {
+                item.classList.remove('problem__tab-active');
+            });
+
+            activeBtn.classList.add('problem--active');
+            activeTab.classList.add('problem__tab-active');
+        }
+
+
+        if (window.innerWidth <= 992) {
+            $('html, body').animate({
+                scrollTop: $(problemCol).offset().top - 100
+            }, 2500);
+            return false;
+        }
+
+
     });
 
 });

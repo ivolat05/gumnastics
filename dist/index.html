@@ -146,89 +146,352 @@
             <div class="container">
                 <div class="problem__wrapp">
                     <div class="proble__img">
-                        <img src="./assets/img/problem-img.svg" alt="" class="problem__img-img">
-                        <a href="#problem" class="proble__img-link marker-1 scroll-link">
+                        <img class="problem__img-img" src="./assets/img/problem-img.svg" alt="">
+                        <button class="proble__img-link marker-1 problem--active" data-tab='#tab_1'>
                             <img src="./assets/img/problem-marker.svg" alt="">
-                        </a>
-                        <a href="#problem" class="proble__img-link marker-2 scroll-link">
+                        </button>
+                        <button class="proble__img-link marker-2" data-tab='#tab_2'>
                             <img src="./assets/img/problem-marker.svg" alt="">
-                        </a>
-                        <a href="#problem" class="proble__img-link marker-3 scroll-link">
+                        </button>
+                        <button class="proble__img-link marker-3" data-tab='#tab_3'>
                             <img src="./assets/img/problem-marker.svg" alt="">
-                        </a>
-                        <a href="#problem" class="proble__img-link marker-4 scroll-link">
+                        </button>
+                        <button class="proble__img-link marker-4" data-tab='#tab_4'>
                             <img src="./assets/img/problem-marker.svg" alt="">
-                        </a>
-                        <a href="#problem" class="proble__img-link marker-5 scroll-link">
+                        </button>
+                        <button class="proble__img-link marker-5" data-tab='#tab_5'>
                             <img src="./assets/img/problem-marker.svg" alt="">
-                        </a>
+                        </button>
                     </div>
         
         
-                    <div id='problem' class="problem__col">
-                        <div class="problem-title">
-                            Шейный отдел
-                        </div>
-                        <div class="problem__row">
-                            <div class="problem__row-problems">
-                                <div class="problem__row-title">
-                                    Проблемы:
+                    <div class="problem__col">
+                        <div id='tab_1' class="problem__tab problem__tab-active">
+                            <div class="problem-title">
+                                Шейный отдел
+                            </div>
+                            <div class="problem__row">
+                                <div class="problem__row-problems">
+                                    <div class="problem__row-title">
+                                        Проблемы:
+                                    </div>
+                                    <ul class="problem__list">
+                                        <li class="problem__list-inner">
+                                            Мышечная атррофия
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Слабый мышечный тонус
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Частые простудные заболевания
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Непавильная осанка
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Проскостопие
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Нарушение опорно-двинального аппарата
+                                        </li>
+                                    </ul>
                                 </div>
-                                <ul class="problem__list">
-                                    <li class="problem__list-inner">
-                                        Мышечная атррофия
-                                    </li>
-                                    <li class="problem__list-inner">
-                                        Слабый мышечный тонус
-                                    </li>
-                                    <li class="problem__list-inner">
-                                        Частые простудные заболевания
-                                    </li>
-                                    <li class="problem__list-inner">
-                                        Непавильная осанка
-                                    </li>
-                                    <li class="problem__list-inner">
-                                        Проскостопие
-                                    </li>
-                                    <li class="problem__list-inner">
-                                        Нарушение опорно-двинального аппарата
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="problem__row-causes">
-                                <div class="problem__row-title">
-                                    Причины проблемы:
+                                <div class="problem__row-causes">
+                                    <div class="problem__row-title">
+                                        Причины проблемы:
+                                    </div>
+                                    <ul class="problem__list">
+                                        <li class="problem__list-inner">
+                                            Малоподвичный обаз жизни
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Сидение за компьютером дома и в школе
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Ношение неправильно подобранной обуви
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Неправильное положение сна
+                                        </li>
+        
+                                    </ul>
                                 </div>
-                                <ul class="problem__list">
-                                    <li class="problem__list-inner">
-                                        Малоподвичный обаз жизни
-                                    </li>
-                                    <li class="problem__list-inner">
-                                        Сидение за компьютером дома и в школе
-                                    </li>
-                                    <li class="problem__list-inner">
-                                        Ношение неправильно подобранной обуви
-                                    </li>
-                                    <li class="problem__list-inner">
-                                        Неправильное положение сна
-                                    </li>
-        
-                                </ul>
+                            </div>
+                            <div class="problem-solution">
+                                <div class="problem-solution-title">
+                                    Решение
+                                </div>
+                                <div class="problem-solution-content">
+                                    Занятия по оздоровительной гимнастике 2 раза в неделю
+                                </div>
+                                <a class="problem-solution-btn" href="gymnastics.html">
+                                    Подробнее
+                                </a>
                             </div>
                         </div>
         
-                        <div class="problem-solution">
-                            <div class="problem-solution-title">
-                                Решение
+                        <div id='tab_2' class="problem__tab">
+                            <div class="problem-title">
+                                Отдел 2
                             </div>
-                            <div class="problem-solution-content">
-                                Занятия по оздоровительной гимнастике 2 раза в неделю
+                            <div class="problem__row">
+                                <div class="problem__row-problems">
+                                    <div class="problem__row-title">
+                                        Проблемы:
+                                    </div>
+                                    <ul class="problem__list">
+                                        <li class="problem__list-inner">
+                                            Мышечная атррофия
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Слабый мышечный тонус
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Частые простудные заболевания
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Непавильная осанка
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Проскостопие
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Нарушение опорно-двинального аппарата
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="problem__row-causes">
+                                    <div class="problem__row-title">
+                                        Причины проблемы:
+                                    </div>
+                                    <ul class="problem__list">
+                                        <li class="problem__list-inner">
+                                            Малоподвичный обаз жизни
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Сидение за компьютером дома и в школе
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Ношение неправильно подобранной обуви
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Неправильное положение сна
+                                        </li>
+        
+                                    </ul>
+                                </div>
                             </div>
-                            <a class="problem-solution-btn" href="gymnastics.html">
-                                Подробнее
-                            </a>
+                            <div class="problem-solution">
+                                <div class="problem-solution-title">
+                                    Решение
+                                </div>
+                                <div class="problem-solution-content">
+                                    Занятия по оздоровительной гимнастике 2 раза в неделю
+                                </div>
+                                <a class="problem-solution-btn" href="gymnastics.html">
+                                    Подробнее
+                                </a>
+                            </div>
                         </div>
+        
+                        <div id='tab_3' class="problem__tab">
+                            <div class="problem-title">
+                                Отдел 3
+                            </div>
+                            <div class="problem__row">
+                                <div class="problem__row-problems">
+                                    <div class="problem__row-title">
+                                        Проблемы:
+                                    </div>
+                                    <ul class="problem__list">
+                                        <li class="problem__list-inner">
+                                            Мышечная атррофия
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Слабый мышечный тонус
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Частые простудные заболевания
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Непавильная осанка
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Проскостопие
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Нарушение опорно-двинального аппарата
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="problem__row-causes">
+                                    <div class="problem__row-title">
+                                        Причины проблемы:
+                                    </div>
+                                    <ul class="problem__list">
+                                        <li class="problem__list-inner">
+                                            Малоподвичный обаз жизни
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Сидение за компьютером дома и в школе
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Ношение неправильно подобранной обуви
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Неправильное положение сна
+                                        </li>
+        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="problem-solution">
+                                <div class="problem-solution-title">
+                                    Решение
+                                </div>
+                                <div class="problem-solution-content">
+                                    Занятия по оздоровительной гимнастике 2 раза в неделю
+                                </div>
+                                <a class="problem-solution-btn" href="gymnastics.html">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+        
+                        <div id='tab_4' class="problem__tab">
+                            <div class="problem-title">
+                                Отдел 4
+                            </div>
+                            <div class="problem__row">
+                                <div class="problem__row-problems">
+                                    <div class="problem__row-title">
+                                        Проблемы:
+                                    </div>
+                                    <ul class="problem__list">
+                                        <li class="problem__list-inner">
+                                            Мышечная атррофия
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Слабый мышечный тонус
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Частые простудные заболевания
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Непавильная осанка
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Проскостопие
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Нарушение опорно-двинального аппарата
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="problem__row-causes">
+                                    <div class="problem__row-title">
+                                        Причины проблемы:
+                                    </div>
+                                    <ul class="problem__list">
+                                        <li class="problem__list-inner">
+                                            Малоподвичный обаз жизни
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Сидение за компьютером дома и в школе
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Ношение неправильно подобранной обуви
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Неправильное положение сна
+                                        </li>
+        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="problem-solution">
+                                <div class="problem-solution-title">
+                                    Решение
+                                </div>
+                                <div class="problem-solution-content">
+                                    Занятия по оздоровительной гимнастике 2 раза в неделю
+                                </div>
+                                <a class="problem-solution-btn" href="gymnastics.html">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+        
+                        <div id='tab_5' class="problem__tab">
+                            <div class="problem-title">
+                                Отдел 5
+                            </div>
+                            <div class="problem__row">
+                                <div class="problem__row-problems">
+                                    <div class="problem__row-title">
+                                        Проблемы:
+                                    </div>
+                                    <ul class="problem__list">
+                                        <li class="problem__list-inner">
+                                            Мышечная атррофия
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Слабый мышечный тонус
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Частые простудные заболевания
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Непавильная осанка
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Проскостопие
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Нарушение опорно-двинального аппарата
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="problem__row-causes">
+                                    <div class="problem__row-title">
+                                        Причины проблемы:
+                                    </div>
+                                    <ul class="problem__list">
+                                        <li class="problem__list-inner">
+                                            Малоподвичный обаз жизни
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Сидение за компьютером дома и в школе
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Ношение неправильно подобранной обуви
+                                        </li>
+                                        <li class="problem__list-inner">
+                                            Неправильное положение сна
+                                        </li>
+        
+                                    </ul>
+                                </div>
+                            </div>
+        
+                            <div class="problem-solution">
+                                <div class="problem-solution-title">
+                                    Решение
+                                </div>
+                                <div class="problem-solution-content">
+                                    Занятия по оздоровительной гимнастике 2 раза в неделю
+                                </div>
+                                <a class="problem-solution-btn" href="gymnastics.html">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+        
+        
+        
                     </div>
+        
+        
         
                 </div>
             </div>
@@ -310,31 +573,31 @@
                 </div>
                 <div class="benefits__wrapp">
                     <ul class="benefits__list">
-                        <li class="benefits__list-inner">
+                        <li class="benefits__list-inner  wow animate__animated animate__fadeInLeft" data-wow-delay='.1s'>
                             Коррекцию имеющихся нарушений
                         </li>
-                        <li class="benefits__list-inner">
+                        <li class="benefits__list-inner  wow animate__animated animate__fadeInLeft" data-wow-delay='1.1s'>
                             Предупреждение новых деформаций
                         </li>
-                        <li class="benefits__list-inner">
+                        <li class="benefits__list-inner wow animate__animated animate__fadeInLeft" data-wow-delay='2.1s'>
                             Улучшение всех двигательных функций организма
                         </li>
-                        <li class="benefits__list-inner">
+                        <li class="benefits__list-inner wow animate__animated animate__fadeInLeft" data-wow-delay='3.1s'>
                             Повышение устойчивости организма к стрессовым ситуациям
                         </li>
                     </ul>
                     <img class="benefits-img" src="./assets/img/benefits.svg" alt="">
                     <ul class="benefits__list-2">
-                        <li class="benefits__list-inner">
+                        <li class="benefits__list-inner wow animate__animated animate__fadeInRight" data-wow-delay='.6s'>
                             Укрепление мышечного корсета
                         </li>
-                        <li class="benefits__list-inner">
+                        <li class="benefits__list-inner wow animate__animated animate__fadeInRight" data-wow-delay='1.6s'>
                             Формирование привычки к занятиям
                         </li>
-                        <li class="benefits__list-inner">
+                        <li class="benefits__list-inner wow animate__animated animate__fadeInRight" data-wow-delay='2.6s'>
                             Закрепление правильного навыка сидения и ходьбы
                         </li>
-                        <li class="benefits__list-inner">
+                        <li class="benefits__list-inner wow animate__animated animate__fadeInRight" data-wow-delay='3.6s'>
                             Профилактика дыхательных и сердечно-сосудистых заболеваний
                         </li>
                     </ul>
@@ -1247,7 +1510,7 @@
                             Если у Вас есть вопросы, напишите нам!
                         </div>
                         <input class="contact-input" type="text" placeholder="Ваше имя">
-                        <input class="contact-input" type="text" placeholder="Ваш телефон">
+                        <input id='telForm-4' class="contact-input" type="text" placeholder="Ваш телефон">
                         <textarea class='contact-textarea' placeholder="Сообщение"></textarea>
                         <a href='#popup-message' class="contact-btn popup-content">
                             Отправить
@@ -1282,7 +1545,7 @@
             </div>
             <input type="text" class="popup-input" placeholder="Ваше имя">
             <label class="red">
-                <input class="popup-input-fix popup-input" type="text">
+                <input id='telForm' class="popup-input-fix popup-input" type="text">
                 <span class='red-text'>Телефон<span class='red-1'>*</span></span>
             </label>
             <a href='#popup-message' class="popup-btn popup-content">
@@ -1307,7 +1570,7 @@
             </div>
             <input type="text" class="popup-input" placeholder="Ваше имя">
             <label class="red recording-red">
-                <input class="popup-input-fix popup-input" type="tel">
+                <input id='telForm-3' class="popup-input-fix popup-input" type="tel">
                 <span class='red-text'>Телефон<span class='red-1'>*</span></span>
             </label>
             <label class="red recording-red">
@@ -1349,7 +1612,7 @@
                 <span class='red-text'>Ваше имя<span class='red-1'>*</span></span>
             </label>
             <label class="red recording-red">
-                <input class="popup-input-fix popup-input" type="tel">
+                <input id='telForm-2' class="popup-input-fix popup-input" type="tel">
                 <span class='red-text'>Телефон<span class='red-1'>*</span></span>
             </label>
             <textarea class='popup-textarea' placeholder="Отзыв"></textarea>
@@ -1435,7 +1698,7 @@
         
         
             <button class="popup-btn" onClick="closePopup();">
-                Отправить
+                Закрыть
             </button>
         </div>    <div id='popup-message-application' class="popup popup-message mfp-hide">
             <button class="popup--close" onClick="closePopup();">
@@ -1454,7 +1717,7 @@
         
         
             <button class="popup-btn" onClick="closePopup();">
-                Отправить
+                Закрыть
             </button>
         </div></div>
     
